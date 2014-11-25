@@ -9,7 +9,7 @@ Installation
 
 ```coffee
 require(devtools)
-install_github('highchartsUtils', 'bthieurmel')
+install_github('bthieurmel/highchartsUtils')
 ```
 
 Use
