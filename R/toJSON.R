@@ -11,8 +11,10 @@
 #' toJSONArray(head(iris))
 #' }
 #' @noRd
+#' @export
 # @include utils.R
 # @include highchartsUtilsClass.R
+
 toJSONArray <- function(obj, json = TRUE, nonames = TRUE){
   list2keyval <- function(l){
     keys = names(l)
@@ -32,6 +34,7 @@ toJSONArray <- function(obj, json = TRUE, nonames = TRUE){
   }
 }
 
+#' @export
 toJSONArray2 <- function(obj, json = TRUE, names = TRUE, ...){
   value = lapply(1:nrow(obj), function(i) {
     res <- as.list(obj[i, ])
@@ -76,11 +79,13 @@ toObj <- function(x){
   gsub('\"#!(.*?)!#\"', "\\1", x)
 }
 
+#' @export
 toJSON2 <- function(x, ...){
   container_ = is.list(x) || (length(x) > 1)
   toObj(toJSON(x, .escapeEscapes = F, container = container_, ...))
 }
 
+#' @export
 toChain2 <- function(x, obj){
   if (length(x) == 0 || is.null(x)) return("")
   config <- sapply(names(x), USE.NAMES = F, function(key){
@@ -90,6 +95,7 @@ toChain2 <- function(x, obj){
 }
 
 #' Convert a list to a GeoJSON compatible list.
+#' @export
 toGeoJSON = function(list_, lat = 'latitude', lon = 'longitude'){
   x = lapply(list_, function(l){
     if (is.null(l[[lat]]) || is.null(l[[lon]])){
