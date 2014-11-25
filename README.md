@@ -17,7 +17,7 @@ Use
 
 ```coffee
 require(highchartsUtils)
-?plotWindRose
+?plotTimeSeries
 
 ```
 
