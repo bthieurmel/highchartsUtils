@@ -1,7 +1,7 @@
 highchartsUtils
 ===============
 
-highchartsUtils is an R package, based on rCharts. We 
+highchartsUtils is an R package, based on rCharts.
 We focus here on the javascript libraries highcharts, highstocks and highmaps.
 
 Installation
