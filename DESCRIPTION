@@ -1,0 +1,34 @@
+Package: highchartsUtils
+Type: Package
+Title: Interactive Charts using Highcharts Javascript Visualization Libraries
+Version: 0.0.1
+Date: 2013-11-25
+Maintainer: Benoit Thieurmel <bt@datak.fr>
+Description: Create interactive visualizations with a plotting interface
+    familiar to R users using Highcharts javascript visualization libraries.
+    Package is based on rCharts package.
+Imports:
+    plyr,
+    lattice,
+    RCurl,
+    RJSONIO,
+    rjson,
+    whisker,
+    yaml,
+    base64enc,
+    data.table
+License: MIT
+Collate:
+    'utils.R'
+    'toJSON.R'
+    'getLayer.R'
+    'highchartsUtilsClass.R'
+    'Highcharts.R'
+    'Highmaps.R'
+    'Highstock.R'
+    'highchartsOutput.R'
+    'highmaps_Choropleth.R'
+    'plot_time_series.R'
+    'plot_wind_rose.R'
+    'renderHighcharts.R'
+    'save_graphic.R'

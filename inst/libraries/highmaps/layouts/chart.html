@@ -1,0 +1,15 @@
+{{{ htmlheader }}}
+<script type='text/javascript'>
+
+            {{ chartData }}
+            {{ RefchartData }}
+            {{ levels }}
+        $(function () {
+
+            var chart = new Highcharts.Map({{{ chartParams }}});
+			
+			{{ addFunctionJS }}
+			
+        });
+
+</script>

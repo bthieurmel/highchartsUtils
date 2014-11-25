@@ -1,0 +1,42 @@
+#' Save graphic in a .html file
+#' 
+#' Save graphic in a .html file
+#' 
+#' Save graphic in a .html file
+#' 
+#' @param graphics : graphic to save
+#' @param file : html file. "NewGraphic.html" by default
+#' @param use.internet.library : Use internet online libray ? Default to FALSE, so use package library
+#' @param write.library.to.file : write.library.to.file ? Default to TRUE. Writing library to file,
+#' graphic can be open by any person on any machine.
+#' 
+#' @return a Highcharts object
+#' 
+#' @examples
+#' 
+#' data(windRoseData)
+#' head(windRoseData)
+#' 
+#' plotWindRose(data = windRoseData, point.grid = 1)
+#' 
+#' res <- plotWindRose(data = windRoseData, point.grid = 1, title ="Wind Rose - grid 1", 
+#'  breaks.vitesse = c(0,2,5,10,15,20,30,Inf), plot = FALSE)
+#'  
+#' res
+#' 
+#' save.graphic(res,file = "Package_libraries_to_file.html")
+#' save.graphic(res,file = "Internet_libraries_to_file.html", use.internet.library = TRUE)
+#' save.graphic(res,file = "Package_libraries_linking_file.html", write.library.to.file = FALSE)
+#' save.graphic(res,file = "Internet_libraries_linking_file.html", use.internet.library = TRUE, write.library.to.file = FALSE)
+#' 
+#' @export save.graphic
+#' 
+#' @note Copyright 2014 RTE
+#' @include highchartsUtilsClass.R
+#' @include utils.R
+
+save.graphic <- function(graphic, file = "NewGraphic.html", use.internet.library = FALSE,  write.library.to.file = TRUE){
+  
+  graphic$save(file, cdn = use.internet.library, standalone = write.library.to.file)
+  
+}

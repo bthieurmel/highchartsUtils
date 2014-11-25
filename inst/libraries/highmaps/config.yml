@@ -1,0 +1,40 @@
+highcharts:
+  jshead:
+    - js/angular.min.js
+    - js/jquery-1.9.1.min.js
+    - js/highmaps.js
+    - js/highcharts.js
+    - js/exporting.js
+  cdn:
+    jshead:
+      - "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"
+      - "http://code.jquery.com/jquery-1.9.1.min.js"
+      - "http://code.highcharts.com/maps/highmaps.js"
+      - "http://code.highcharts.com/highcharts.js"
+      - "http://code.highcharts.com/maps/modules/exporting.js"
+  France_regions:
+    cdn:
+      jshead:
+        - "http://code.highcharts.com/mapdata/countries/fr/custom/fr-all-mainland.js"
+    jshead:
+      - maps/fr-all-mainland.js
+  France_regions_dom:
+    cdn:
+      jshead:
+        - "http://code.highcharts.com/mapdata/countries/fr/fr-all.js"
+    jshead:
+      - maps/fr-all.js
+  Europe:
+    cdn:
+      jshead:
+        - "http://code.highcharts.com/mapdata/custom/europe.js"
+    jshead:
+      - maps/europe.js
+  UE:
+    cdn:
+      jshead:
+        - "http://code.highcharts.com/mapdata/custom/european-union.js"
+    jshead:
+      - maps/european-union.js
+
+      
