@@ -7,7 +7,6 @@ highcharts:
     - js/highcharts-3d.js
     - js/exporting.js
     - js/solid-gauge.src.js
-    - js/drilldown.js
   cdn:
     jshead:
       - "http://code.jquery.com/jquery-1.9.1.min.js"
@@ -17,4 +16,3 @@ highcharts:
       - "http://code.highcharts.com/highcharts-3d.js"
       - "http://code.highcharts.com/modules/exporting.js"
       - "http://code.highcharts.com/modules/solid-gauge.src.js"
-      - "http://code.highcharts.com/modules/drilldown.js"
