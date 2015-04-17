@@ -29,6 +29,5 @@ Collate:
     'highchartsOutput.R'
     'highmaps_Choropleth.R'
     'plot_time_series.R'
-    'plot_wind_rose.R'
     'renderHighcharts.R'
     'save_graphic.R'
