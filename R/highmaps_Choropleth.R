@@ -132,7 +132,7 @@ highmapsChoropleth <- function(data, value, key, time = NULL, title = "", scope 
   }
   
   
-  res <- RTEgraphics::Highmaps$new()
+  res <- highchartsUtils::Highmaps$new()
   
   res$colors(col)
   res$setScope(scope)
